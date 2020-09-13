@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <title>Niel Rackers - FCC Tribute</title>
+    <!--I hit random wikipedia article and this was the first person it showed-->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <style>
+        #hero-image img {
+            max-width: 200%;
+            max-height: 100vh;
+            height:40vh;
+            align-self: center;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Lora', serif;
+          font-size: 1rem;
+        }
+        #main {
+            background-color:gainsboro;
+        }
+        #hero {
+            background-color:white;
+            display: flex;
+            justify-content: space-around;
+            margin: 0px -2vw;
+        }
+        #title {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 3rem;
+            align-self: flex-end;
+            color: rgb(151,35,63);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(151,35,63);
+            margin: 0px -2vw;
+            padding: 1vh 0vw;
+        }
+        nav a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            transition: letter-spacing .3s ease-out;
+            letter-spacing: normal
+        }
+        nav a:hover {
+            text-decoration: underline;
+            letter-spacing: 0.1em;
+        }
+        #tribute-info {
+            padding: 2vh 10vw;
+        }
+        #tribute-info h2 {
+            color: rgb(151,35,63);
+            text-decoration: underline;
+            font-size: 1.5rem;
+        }
+        li, #tribute-info p{
+            font-size: 1.25rem;
+            line-height: 2em;
+        }
+        footer {
+            background-color:rgb(151,35,63);
+            color: white;
+            font-size: 1.25rem;
+            padding: 2vh 10vw;
+        }
+        footer a{
+            color: white;
+        }
+        #closing {
+            display: flex;
+            justify-content: left;
+            align-content: center;
+            padding: 2vh 0vw;
+        }
+        #closing p{
+            min-width: 40vw;
+            align-self: center;
+        }
+        #img-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            width: 50vw;
+        }
+        #img-div img {
+            max-width: 30%;
+            align-self: center;
+        }
+        #img-div figcaption {
+            align-self: center;
+        }
+    </style>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <main id="main">
+        <hero id="hero">
+            <h1 id="title">Neil Rackers</h1>
+            <div id="hero-img">
+                <img src="https://lh6.googleusercontent.com/amLQoRH2CYoYTEhuomF6QHYbXDDiz5yW3I3_AkA_sHpdQ9YEriIgTMiFDjZQ3tb9O197PiyMC0uiq0A3Wf7Y=w1920-h966" id="hero-image" alt="Niel Rackers Training Image"/>
+                <!--<caption for="image">Rackers at Washington Footbal Team's training camp in 2012</caption>-->
+            </div>
+        </hero>
+        <nav>
+            <a href="#">Early Life</a>
+            <a href="#">Career</a>
+        </nav>
+        <div id="tribute-info">
+            <h2>Early Life</h2>
+            <ul>
+                <li>Neil was a sport boy with a good leg. When he was born, he sat his parents down and said "Mom, Dad, I'm going to kick balls real good." </li>
+                <li>Following his dream to kick balls good, Niel played football and soccer in high school.
+                    <ul>
+                        <li>He also played baseball, which is notably a sport without kicking.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Career</h2>
+            <ul>
+                <li>At the age of 24, he was chosen to kick balls for the Bengals. He did real good, kicking the ball through the hoop 65% of the time.</li>
+                <li>In 2003, the Bengals decided that Niel was going to BenGo to the Cardinals. He did real good here, too, and made 31 field goals in a row. For that, the Cardinals decided to keep him for 6 whole years.</li>
+                <li>Eventually, Niel wore out his welcome, and was transferred to the Texans. He did okay there.</li>
+                <li>After a year with the Texans, Niel was transferred to the Washington Football Team (who at that time was named after a racial slur).</li>
+                <li>After less than a season with the Washington Racial Slur's, Niel retired to cure ovarian cancer. He has not yet succeeded.</li>
+            </ul>
+            <div id="closing">
+                <p id="look-it-up-yourself">
+                    If you want to learn more about Neil, try <a href="https://en.wikipedia.org/wiki/Neil_Rackers" target="_blank" id="tribute-link"> his Wikipedia page. </a> Or maybe, you can just find him via a random wikipedia article like I did. 
+                </p>
+                <div id="img-div">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Neil_rackers_redskins.jpg" id="image" alt="Niel Rackers Training Image"/>
+                    <figcaption for="image" id="img-caption">Rackers at Washington Footbal Team's training camp in 2012</figcaption>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Developed by Jon Lamp for the <a href="https://www.freecodecamp.org/">Free Code Camp</a> cirriculumn. 
+    </footer>
+</body>
